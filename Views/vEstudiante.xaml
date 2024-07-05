@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kpullopaxis6.Views.vEstudiante"
+             Title="vEstudiante">
+    <VerticalStackLayout Spacing="15"
+                         Padding="15">
+        <Label 
+            Text="Semana 6: Consumo WS"
+            FontSize="25"
+            HorizontalTextAlignment="Center"
+            TextColor="Purple"/>
+        <ListView x:Name="ListaEstudiantes">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label x:Name="lblNombre" Text="{Binding nombre}" TextColor="Blue"/>
+                            <Label x:Name="lblApellido" Text="{Binding apellido}" TextColor="Red"/>
+                            
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>
