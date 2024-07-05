@@ -6,12 +6,12 @@ namespace kpullopaxis6.Views;
 public partial class vEstudiante : ContentPage
 {
     private const string Url = "http://192.168.1.105/semana6/estudiantews.php";
-    private readonly HttpClient cliente = new HttpClient();
+    private readonly HttpClient cliente = new HttpClient();    
     private ObservableCollection<Models.Estudiante> est;
 
     public vEstudiante()
     {
-        InitializeComponent();
+        InitializeComponent();    
         est = new ObservableCollection<Models.Estudiante>();
         mostrar();
     }
