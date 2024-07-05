@@ -19,10 +19,10 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <Label Text="CODIGO" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" TextColor="Red" />
-            <Label Text="NOMBRE" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" TextColor="Red" />
-            <Label Text="APELLIDO" Grid.Row="0" Grid.Column="2" FontAttributes="Bold" TextColor="Red" />
-            <Label Text="EDAD" Grid.Row="0" Grid.Column="3" FontAttributes="Bold" TextColor="Red" />
+            <Label Text="codigo" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" TextColor="Red" />
+            <Label Text="nombre" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" TextColor="Red" />
+            <Label Text="apellido" Grid.Row="0" Grid.Column="2" FontAttributes="Bold" TextColor="Red" />
+            <Label Text="edad" Grid.Row="0" Grid.Column="3" FontAttributes="Bold" TextColor="Red" />
         </Grid>
         <ListView x:Name="ListaEstudiantes">
             <ListView.ItemTemplate>
@@ -35,10 +35,10 @@
                                 <ColumnDefinition Width="2*" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <Label Text="{Binding Codigo}" Grid.Column="0" />
-                            <Label Text="{Binding Nombre}" Grid.Column="1" />
-                            <Label Text="{Binding Apellido}" Grid.Column="2" />
-                            <Label Text="{Binding Edad}" Grid.Column="3" />
+                            <Label Text="{Binding codigo}" Grid.Column="0" />
+                            <Label Text="{Binding nombre}" Grid.Column="1" />
+                            <Label Text="{Binding apellido}" Grid.Column="2" />
+                            <Label Text="{Binding edad}" Grid.Column="3" />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
