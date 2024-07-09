@@ -5,7 +5,7 @@ namespace kpullopaxis6.Views;
 
 public partial class vEstudiante : ContentPage
 {
-    private const string Url = "http://192.168.1.105/semana6/estudiantews.php";
+    private const string Url = "http://192.168.1.102/semana6/estudiantews.php";
     private readonly HttpClient cliente = new HttpClient();    
     private ObservableCollection<Models.Estudiante> est;
 

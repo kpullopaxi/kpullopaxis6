@@ -4,11 +4,17 @@
              x:Class="kpullopaxis6.Views.vEstudiante"
              Title="vEstudiante">
 
-    <VerticalStackLayout Spacing="15" Padding="15">
-        <Label Text="Semana 6"
-               FontSize="15"
+    <VerticalStackLayout Spacing="20" Padding="20">
+        <Label Text="Semana 6: Consumo WS"
+               FontSize="30"
                HorizontalTextAlignment="Center"
                TextColor="Purple"/>
+        <Label Text="Kleber Pullopaxi"
+               HorizontalTextAlignment="End"
+               FontSize="10"
+               TextColor="Purple"/>
+        <Image Source="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2015/04/internet.jpg"
+                WidthRequest="200"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -19,10 +25,10 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <Label Text="codigo" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" TextColor="Red" />
-            <Label Text="nombre" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" TextColor="Red" />
-            <Label Text="apellido" Grid.Row="0" Grid.Column="2" FontAttributes="Bold" TextColor="Red" />
-            <Label Text="edad" Grid.Row="0" Grid.Column="3" FontAttributes="Bold" TextColor="Red" />
+            <Label Text="Codigo" Grid.Row="0" Grid.Column="0" FontAttributes="Bold" TextColor="Red" />
+            <Label Text="Nombre" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" TextColor="Red" />
+            <Label Text="Apellido" Grid.Row="0" Grid.Column="2" FontAttributes="Bold" TextColor="Red" />
+            <Label Text="Edad" Grid.Row="0" Grid.Column="3" FontAttributes="Bold" TextColor="Red" />
         </Grid>
         <ListView x:Name="ListaEstudiantes">
             <ListView.ItemTemplate>
