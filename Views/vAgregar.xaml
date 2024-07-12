@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kpullopaxis6.Views.vAgregar"
+             Title="vAgregar">
+    <VerticalStackLayout>
+        <Label 
+            Text="Agregar estudiante"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            TextColor="Red"/>
+        <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre"/>
+        <Entry x:Name="txtApellido" Placeholder="Ingrese el apellido"/>
+        <Entry x:Name="txtEdad" Placeholder="Ingrese la edad"/>
+        <Button x:Name="btnAgregar"
+                Text="Agregar estudiante"
+                Clicked="btnAgregar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

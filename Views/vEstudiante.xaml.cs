@@ -1,3 +1,4 @@
+using kpullopaxis6.Models;
 using Newtonsoft.Json;
 using System.Collections.ObjectModel;
 
@@ -5,7 +6,7 @@ namespace kpullopaxis6.Views;
 
 public partial class vEstudiante : ContentPage
 {
-    private const string Url = "http://192.168.1.102/semana6/estudiantews.php";
+    private const string Url = "http://192.168.1.105/semana6/estudiantews.php";
     private readonly HttpClient cliente = new HttpClient();    
     private ObservableCollection<Models.Estudiante> est;
 
@@ -37,5 +38,18 @@ public partial class vEstudiante : ContentPage
         {
             await DisplayAlert("Error", "Error inesperado: " + ex.Message, "OK");
         }
+    }
+
+    private void btnAgregar_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Views.vAgregar());
+
+    }
+
+    private void ListaEstudiantes_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+        var objEstudiante = (Estudiante)e.SelectedItem;
+        Navigation.PushAsync(new ActEliminar(objEstudiante));
+
     }
 }

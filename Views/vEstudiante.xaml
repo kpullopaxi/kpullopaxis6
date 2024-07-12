@@ -30,7 +30,7 @@
             <Label Text="Apellido" Grid.Row="0" Grid.Column="2" FontAttributes="Bold" TextColor="Red" />
             <Label Text="Edad" Grid.Row="0" Grid.Column="3" FontAttributes="Bold" TextColor="Red" />
         </Grid>
-        <ListView x:Name="ListaEstudiantes">
+        <ListView x:Name="ListaEstudiantes" ItemSelected="ListaEstudiantes_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -50,5 +50,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button x:Name="btnAgregar"
+                Text="Agregar estudiante"
+                Clicked="btnAgregar_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
